@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AC Circuit App</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/addons/p5.sound.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/14.8.1/math.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <style>
+      /* Simple “floating” back button */
+      #backBtn {
+        position: fixed;
+        top: 12px;
+        left: 12px;
+        z-index: 9999;              /* stay above the canvas */
+        padding: 8px 12px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        background: white;
+        color: inherit;
+        text-decoration: none;
+        font: 14px system-ui, sans-serif;
+        box-shadow: 0 2px 10px rgba(0,0,0,.08);
+        user-select: none;
+      }
+      #backBtn:hover { border-color: #888; }
+      #backBtn:active { transform: translateY(1px); }
+    </style>
+
+    <a id="backBtn" href="../index.html" aria-label="Back to landing page"
+      >Back</a
+    >
+
+    <script>
+      // Optional: make it work even if you launched this page directly
+      // If there's browser history, go back; otherwise go to your landing page.
+      (function () {
+        const btn = document.getElementById("backBtn");
+        btn.addEventListener("click", (e) => {
+          // change this to true if you ALWAYS want ../index.html
+          const alwaysGoHome = false;
+
+          if (!alwaysGoHome && window.history.length > 1) {
+            e.preventDefault();
+            window.history.back();
+          }
+          // else: normal href navigation happens
+        });
+      })();
+    </script>
+
+    <main></main>
+    <script src="AppData.js"></script>
+    <script src="MessageBoard.js"></script>
+    <script src="HandleMathErrors.js"></script>
+    <script src="HandleInverseErrors.js"></script>
+    <script src="Input.js"></script>
+    <script src="Editable.js"></script>
+    <script src="Selectable.js"></script>
+    <script src="Label.js"></script>
+    <script src="Placeable.js"></script>
+    <script src="Draggable.js"></script>
+    <script src="Rotatable.js"></script>
+    <script src="Component.js"></script>
+    <script src="Movable.js"></script>
+    <script src="DetectSC.js"></script>
+    <script src="DSU.js"></script>
+    <script src="FindAllNodes.js"></script>
+    <script src="BuildMatrix.js"></script>
+    <script src="Simulator.js"></script>
+    <script src="Alignable.js"></script>
+    <script src="ZoomAndPan.js"></script>
+    <script src="DropDown.js"></script>
+    <script src="ActiveAC.js"></script>
+    <script src="InductiveReactance.js"></script>
+    <script src="CapacitiveReactance.js"></script>
+    <script src="Resistance.js"></script>
+    <script src="Earthing.js"></script>
+    <script src="Transmittable.js"></script>
+    <script src="IdealTransformer.js"></script>
+    <script src="Transformer.js"></script>
+    <script src="Capacitor.js"></script>
+    <script src="Command.js"></script>
+    <script src="Controller.js"></script>
+    <script src="Connectable.js"></script>
+    <script src="Updateable.js"></script>
+    <script src="Edge.js"></script>
+    <script src="Events.js"></script>
+    <script src="History.js"></script>
+    <script src="Inductor.js"></script>
+    <script src="Resistor.js"></script>
+    <script src="Section.js"></script>
+    <script src="Utility.js"></script>
+    <script src="Vertex.js"></script>
+    <script src="VoltageAC.js"></script>
+    <script src="Ground.js"></script>
+    <script src="Wire.js"></script>
+    <script src="InvertMatrix.js"></script>
+    <script src="VectorB.js"></script>
+    <script src="EngineeringNotation.js"></script>
+    <script src="CircuitStore.js"></script>
+    <script src="ComponentSelector.js"></script>
+    <script src="App2.js"></script>
+  </body>
+</html>
