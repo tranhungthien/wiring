@@ -3,5 +3,6 @@ function clr() {
   activePhasor = null;
   augend = null;
   addend = null;
+  clearPhasors();
   messageBoard.clear();
 }
