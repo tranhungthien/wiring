@@ -17,6 +17,6 @@ function neg() {
     phasors.push(r);
 
     augend = null;
-    state = "CLR";
+    state = "IDLE";
   }
 }
