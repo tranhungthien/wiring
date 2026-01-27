@@ -20,9 +20,9 @@ function add() {
     r.phasorAngle.value = Pang; //abs(Pang);
     r.rotate();
     phasors.push(r);
-
+    
     augend = null;
     addend = null;
-    state = "CLR";
+    state = "IDLE";
   }
 }
