@@ -1,4 +1,4 @@
 function newPhasor() {
   phasors.push(new Phasor(200));
-  state = "CLR";
+  state = "IDLE";
 }
