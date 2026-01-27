@@ -15,6 +15,14 @@ function deletePhasor() {
     }
 }
 
+function clearPhasors() {
+  for (let p of phasors) {
+    const cmd = new DeleteCMD(phasors, p);
+    history.execute(cmd);
+    p = null;
+  }
+}
+
 function mapOutMatrix(M, name = "M") {
   const X = math.matrix(M); // ensure it's a math.matrix
   const size = X.size(); // e.g. [2,9]
