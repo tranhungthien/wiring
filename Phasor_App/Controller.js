@@ -11,6 +11,12 @@ function controller() {
     case "SUB":
       sub();
       break;
+    case "MUL":
+      mul();
+      break;
+    case "CNL":
+      cnl();
+      break;
     case "NEW":
       newPhasor();
       break;
