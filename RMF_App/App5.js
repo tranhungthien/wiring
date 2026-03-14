@@ -89,8 +89,8 @@ function draw() {
   textSize(20);
   textAlign(CENTER, CENTER);
   text("Φ₁", 220, 0);
-  text("Φ₂", -110, 110 * sqrt(3));
-  text("Φ₃", -110, -110 * sqrt(3));
+  text("Φ₃", -110, 110 * sqrt(3));
+  text("Φ₂", -110, -110 * sqrt(3));
 
   text("Φ₁", gx + 90, -gy - 125);
   text("Φ₂", gx + 210, -gy - 125);
