@@ -98,7 +98,7 @@ function draw() {
   pop();
 
   if (t >= 900.0) t = 0;
-  else t += 0.2;
+  else t += 0.5; //0.2;
 }
 
 function keyPressed() {
