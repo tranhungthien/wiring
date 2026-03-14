@@ -93,8 +93,8 @@ function draw() {
   text("Φ₂", -110, -110 * sqrt(3));
 
   text("Φ₁", gx + 90, -gy - 125);
-  text("Φ₂", gx + 210, -gy - 125);
-  text("Φ₃", gx + 330, -gy - 125);
+  text("Φ₃", gx + 210, -gy - 125);
+  text("Φ₂", gx + 330, -gy - 125);
   pop();
 
   if (t >= 900.0) t = 0;
