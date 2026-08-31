@@ -388,14 +388,14 @@ function loadProject(project) {
     restorePlaceable(component, data);
     component.assignContacts();
 
-    // Restore physical breaker position.
-    if (data.flip === true) {
-      component.flip = true;
-      component.setContact(true);
-    } else {
-      component.flip = false;
-      component.setContact(false);
-    }
+    // // Restore physical breaker position.
+    // if (data.flip === true) {
+    //   component.flip = true;
+    //   component.setContact(true);
+    // } else {
+    //   component.flip = false;
+    //   component.setContact(false);
+    // }
 
     return component;
   });
